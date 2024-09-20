@@ -1,0 +1,12 @@
+spring:
+  application:
+      name: Albums API
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:password}
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/albums
+
+services:
+  wikipedia:
+    host: ${WIKIPEDIA_HOST:"https://es.wikipedia.org/"}
